@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate" : "bin win-cli"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/narwinoks/generate-modules.git"
+  },
+  "bin": {
+    "wins-genartor": "./bin/win-cli.js"
   },
   "author": "win",
   "license": "MIT",
