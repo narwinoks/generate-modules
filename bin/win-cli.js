@@ -32,9 +32,6 @@ fs.mkdirSync(distPath, { recursive: true });
 const samplesPath = path.resolve(projectPath, 'public/dist');
 fs.mkdirSync(samplesPath, { recursive: true });
 
-const srcPath = path.resolve(projectPath, 'public/src');
-fs.mkdirSync(srcPath, { recursive: true });
-
 const configPath = path.resolve(projectPath, 'app/config');
 fs.mkdirSync(configPath, { recursive: true });
 
