@@ -2,15 +2,10 @@
 
 [Express'](https://www.npmjs.com/package/express) application generator.
 
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![Linux Build][github-actions-ci-image]][github-actions-ci-url]
-[![Windows Build][appveyor-image]][appveyor-url]
-
 ## Installation
 
 ```sh
-$ npm install -g express-generator
+$ npm install -g express-generate-wins
 ```
 
 ## Quick Start
@@ -38,4 +33,3 @@ $ node app.js
 ## License
 
 [MIT](LICENSE)
-
