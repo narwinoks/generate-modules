@@ -10,8 +10,8 @@ $ npm install -g express-generate-wins
 
 ## Quick Start
 
-The quickest way to get started with express is to utilize the executable `express(1)` to generate an application as shown below:
-
+The quickest way to get started with express is to use the `win generate` executable to generate the app as shown below,
+with this command you have got some files and folders in your project:
 Create the app:
 
 ```bash
@@ -21,7 +21,7 @@ $ express --view=hbs /tmp/foo && cd /tmp/foo
 Install dependencies:
 
 ```bash
-$ npm install
+$ npx wins-genartor <project_name>
 ```
 
 Start your Express.js app at `http://localhost:4001/`:
