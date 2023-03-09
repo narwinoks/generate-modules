@@ -15,20 +15,32 @@ with this command you have got some files and folders in your project:
 Create the app:
 
 ```bash
-$ express --view=hbs /tmp/foo && cd /tmp/foo
+$ npx wins-genartor <project_name>
 ```
 
 Install dependencies:
 
 ```bash
-$ npx wins-genartor <project_name>
+$ npm install
 ```
-
 Start your Express.js app at `http://localhost:4001/`:
 
 ```bash
 $ node app.js
 ```
+## env setting
+```bash
+PORT =<PORT>
+
+DB_NAME = <DB_NAME>
+DB_PASSWORD =<DB_PASSWORD>
+DB_USERNAME =<DB_USERNAME>
+DB_HOST =<DB_PASSWORD>
+```
+
+## Informations
+
+default setting my database is postgres sql
 
 ## License
 
