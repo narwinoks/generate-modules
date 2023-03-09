@@ -29,13 +29,22 @@ fs.mkdirSync(imagePath, { recursive: true });
 const distPath = path.resolve(projectPath, 'public/dist');
 fs.mkdirSync(distPath, { recursive: true });
 
-const samplesPath = path.resolve(projectPath, 'public/dist');
+const cssPath = path.resolve(projectPath, 'public/css');
+fs.mkdirSync(cssPath, { recursive: true });
+
+const jsPath = path.resolve(projectPath, 'public/js');
+fs.mkdirSync(jsPath, { recursive: true });
+
+const samplesPath = path.resolve(projectPath, 'samples');
 fs.mkdirSync(samplesPath, { recursive: true });
+
+const testPath = path.resolve(projectPath, 'test');
+fs.mkdirSync(testPath, { recursive: true });
 
 const configPath = path.resolve(projectPath, 'app/config');
 fs.mkdirSync(configPath, { recursive: true });
 
-const controllerPath = path.resolve(projectPath, 'app/controller');
+const controllerPath = path.resolve(projectPath, 'app/controllers');
 fs.mkdirSync(controllerPath, { recursive: true });
 
 const databasePath = path.resolve(projectPath, 'app/database');
@@ -67,17 +76,22 @@ const templatePath = path.join(__dirname, '../templates');
 const templateFiles = [
     { src: 'app.js', dest: path.join(projectPath, 'app.js') },
     { src: '.sequelizerc', dest: path.join(projectPath, '.sequelizerc') },
+    { src: '.env', dest: path.join(projectPath, '.env') },
     { src: 'package.json', dest: path.join(projectPath, 'package.json') },
     { src: 'app/views/index.ejs', dest: path.join(viewPath, 'index.ejs') },
     { src: 'app/routes/index.router.js', dest: path.join(routePath, 'index.router.js') },
     { src: 'app/routes/user.router.js', dest: path.join(routePath, 'user.router.js') },
     { src: 'app/config/database.js', dest: path.join(configPath, 'database.js') },
     { src: 'app/models/index.js', dest: path.join(modelsPath, 'index.js') },
+    { src: 'app/models/User.js', dest: path.join(modelsPath, 'user.js') },
+    { src: 'app/controllers/UserController.js', dest: path.join(controllerPath, 'UserController.js') },
+    { src: 'app/database/migrations/20230307150814-User.js', dest: path.join(migrationsPath, '20230307150814-User.js') },
+    { src: 'app/database/seeders/20230307161715-User.js', dest: path.join(seedersPath, '20230307161715-User.js') },
     { src: 'samples/.env.sample', dest: path.join(samplesPath, '.env.sample') },
     { src: 'samples/app.conf.sample', dest: path.join(samplesPath, 'app.conf.sample') },
     { src: 'samples/app.keys.sample', dest: path.join(samplesPath, 'app.keys.sample') },
-    { src: 'samples/db.conf.sample ', dest: path.join(samplesPath, 'db.conf.sample ') },
-
+    { src: 'samples/db.conf.sample', dest: path.join(samplesPath, 'db.conf.sample') },
+    { src: 'test/test.test.js', dest: path.join(testPath, 'test.test.js') },
 ];
 
 // Copy the template files to the destination folder
